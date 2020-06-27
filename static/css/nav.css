@@ -6,6 +6,7 @@
 
 }
 
+/* Css for navigation */
 #navbar{
     display: flex;
     align-items: center;
@@ -29,6 +30,7 @@
     font-size: 1.4rem;
 }
 
+/* Css for Anchor tag in Navigation */
 #navbar ul li a{
     text-decoration: none;
     color: white;
@@ -47,6 +49,8 @@
     color: black;
 }
 
+
+/* Css for Search Button in Navigation */
 #searchBtn{
     padding: 3px 4px;
     border: 1px solid white;
@@ -55,6 +59,8 @@
     border-radius: 4px;
     font-size: 1rem;
 }
+
+
 
 #searchBtn:hover{
     cursor: pointer;
