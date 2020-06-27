@@ -1,0 +1,25 @@
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button .btn{
+    padding: 4px 8px;
+    margin: 3px 2px;
+    border: none;
+    background: royalblue;
+    border-radius: 7px;
+    box-shadow: 1px 1px 3px 1px #6497e3, 1px 1px 3px 1px #d1eaf3;
+}
+
+.button .btn:hover{
+    background-color: rgb(118, 145, 228);
+    cursor: pointer;
+}
+
+.button .btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
