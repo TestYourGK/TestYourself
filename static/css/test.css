@@ -14,10 +14,10 @@
     font-size: 3rem;
 }
 
-.test>.btn{
-    display: block;
+.btn{
+    display: inline-block;
     margin: 2px auto;
-    margin-top: 50px;
+
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
@@ -27,12 +27,12 @@
     border: 1px solid transparent;
     padding: .375rem .75rem;
     font-size: 1.2rem;
-    line-height: 1;
+
     border-radius: .25rem;
     
 }
 
-.test>.btn:hover{
+.btn:hover{
     background-color: rgb(118, 145, 228);
     cursor: pointer;
 }
