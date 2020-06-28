@@ -1,7 +1,7 @@
 .container{
-    background: url(/img/text-on-shelf-256417.jpg'..') no-repeat center center/cover;
+    background: url('../img/text-on-shelf-256417.jpg') no-repeat center center/cover;
     background-attachment: fixed;
-    height: 350px;
+    height: 380px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -13,6 +13,7 @@
 .container p{
     text-shadow: 1px 1px 1px #000, 4px 4px 5px #607D8B;
     color: #fdffff;
+    padding: 0.3px 13rem;
     font-size: 1.3rem;
 
 }

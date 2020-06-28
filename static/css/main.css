@@ -17,8 +17,20 @@ main{
 /* Css for various cards */
 .cards{
     width: 300px;
-    border: 1px solid black;
+
     margin:  4px;
-    border-radius: 5px;
+
     font-size: 1.1rem;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.cards p{
+    padding: 5px 0px;
+    color: #868181;
+}
+
+.cards strong{
+    padding: 0px;
+    color: black;
 }

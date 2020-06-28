@@ -7,12 +7,22 @@
 }
 
 .button .btn{
-    padding: 4px 8px;
-    margin: 3px 2px;
-    border: none;
-    background: royalblue;
-    border-radius: 7px;
-    box-shadow: 1px 1px 3px 1px #6497e3, 1px 1px 3px 1px #d1eaf3;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    
 }
 
 .button .btn:hover{
