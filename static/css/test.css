@@ -1,0 +1,31 @@
+.test{
+    line-height: 130px;
+}
+
+.test>p{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.test>.btn{
+    display: block;
+    margin: 2px auto;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: 400;
+
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1.2rem;
+    line-height: 1;
+    border-radius: .25rem;
+    
+}
+
+.test>.btn:hover{
+    background-color: rgb(118, 145, 228);
+    cursor: pointer;
+}
