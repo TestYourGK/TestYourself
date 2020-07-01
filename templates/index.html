@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../static/css/nav.css">
+    <!-- <link rel="stylesheet" href="../static/css/nav.css">
     <link rel="stylesheet" href="../static/css/head.css">
     <link rel="stylesheet" href="../static/css/main.css">
-    <link rel="stylesheet" href="../static/css/button.css">
+    <link rel="stylesheet" href="../static/css/button.css"> -->
     <!-- These commented links are for backened -->
-    <!-- <link rel="stylesheet" href="{{url_for('static',filename='css/nav.css')}}"> 
+    <link rel="stylesheet" href="{{url_for('static',filename='css/nav.css')}}"> 
     <link rel="stylesheet" href="{{url_for('static',filename='css/head.css')}}">
     <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='css/button.css')}}"> -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/button.css')}}">
 </head>
 
 <body>
@@ -23,9 +23,9 @@
             <li>
                 <h3>Title</h3>
             </li> <!-- Name of webpage-->
-            <li><a href="../templates/index.html">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="../templates/contact.html">Contact Us</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact Us</a></li>
         </ul>
         <ul>
             <li><input type="text" id='search' placeholder="Search"></li>
@@ -49,27 +49,27 @@
             <!-- the following are various quiz cards with their different topics of each -->
             <!-- description about each topic in About the particular topic -->
             <div class="cards">
-                <div class="img"><img src="../static/img/GK.jpg" alt="General Knowledge"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/GK.jpg')}}" alt="General Knowledge"></div>
                 <div class="content">
                     <p><strong>General Knowledge</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=9/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=9/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=9/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="start/category=9/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="start/category=9/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="start/category=9/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
 
             </div>
             <div class="cards">
-                <div class="img"><img src="../static/img/books.jpg" alt="Entertainment: Books"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/books.jpg')}}" alt="Entertainment: Books"></div>
                 <div class="content">
                     <p><strong>Entertainment: Books</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=10/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=10/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=10/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=10/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=10/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=10/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
 
@@ -80,72 +80,72 @@
                     <p><strong>Entertainment: Films</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=11/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=11/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=11/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=11/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=11/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=11/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
 
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/music.jpg" alt="Entertainment: Music"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/music.jpg')}}" alt="Entertainment: Music"></div>
                 <div class="content">
                     <p><strong>Entertainment: Music</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=12/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=12/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=12/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=12/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=12/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=12/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
 
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/theatre.jpg" alt="Entertainment: Musicals & Theatres"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/theatre.jpg')}}" alt="Entertainment: Musicals & Theatres"></div>
                 <div class="content">
                     <p><strong>Entertainment: Musicals & Theatres</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=13/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=13/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=13/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=13/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=13/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=13/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
 
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/Television.jpg" alt="Entertainment: Television"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/Television.jpg')}}" alt="Entertainment: Television"></div>
                 <div class="content">
                     <p><strong>Entertainment: Television</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=14/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=14/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=14/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=14/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=14/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=14/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
 
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/videogames.jpg" alt="Entertainment: Video Games"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/videogames.jpg')}}" alt="Entertainment: Video Games"></div>
                 <div class="content">
                     <p><strong>Entertainment: Video Games</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=15/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=15/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=15/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=15/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=15/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=15/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
 
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/boardgames.jpg" alt="Entertainment: Board Games"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/boardgames.jpg')}}" alt="Entertainment: Board Games"></div>
                 <div class="content">
                     <p><strong>Entertainment: Board Games</strong></p>
                     <p>About that particular topic</p>
@@ -159,119 +159,119 @@
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/SciNature.jpg" alt="Science & Nature"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/SciNature.jpg')}}" alt="Science & Nature"></div>
                 <div class="content">
                     <p><strong>Science & Nature</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=17/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=17/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=17/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=17/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=17/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=17/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
 
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/Comp.jpg" alt="Science: Computers"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/Comp.jpg')}}" alt="Science: Computers"></div>
                 <div class="content">
                     <p><strong>Science: Computers</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=18/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=18/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=18/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=18/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=18/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=18/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/Math.jpg" alt="Science: Mathematics"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/Math.jpg')}}" alt="Science: Mathematics"></div>
                 <div class="content">
                     <p><strong>Science: Mathematics</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=19/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=19/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=19/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=19/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=19/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=19/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/mythology.jpg" alt="Mythology"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/mythology.jpg')}}" alt="Mythology"></div>
                 <div class="content">
                     <p><strong>Mythology</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=20/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=20/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=20/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=20/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=20/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=20/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/sport.png" alt="Sports"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/sport.png')}}" alt="Sports"></div>
                 <div class="content">
                     <p><strong>Sports</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=21/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=21/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=21/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=21/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=21/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=21/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/geography.jpg" alt="Geography"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/geography.jpg')}}" alt="Geography"></div>
                 <div class="content">
                     <p><strong>Geography</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=22/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=22/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=22/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=22/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=22/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=22/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/history.jpg" alt="History"></div>
+                <div class="img"><img src="{{url_for('static',filename='/history.jpg')}}" alt="History"></div>
                 <div class="content">
                     <p><strong>History</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=23/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=23/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=23/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=23/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=23/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=23/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/politics.jpg" alt="Politics"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/politics.jpg')}}" alt="Politics"></div>
                 <div class="content">
                     <p><strong>Politics</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=24/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=24/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=24/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=24/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=24/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=24/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/arts.jpg" alt="Arts"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/arts.jpg')}}" alt="Arts"></div>
                 <div class="content">
                     <p><strong>Arts</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=25/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=25/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=25/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=25/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=25/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=25/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
             </div>
@@ -282,87 +282,87 @@
                     <p><strong>Celebrities</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=26/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=26/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=26/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=26/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=26/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=26/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/animals.jpg" alt="Animals"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/animals.jpg')}}" alt="Animals"></div>
                 <div class="content">
                     <p><strong>Animals</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=27/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=27/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=27/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=27/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=27/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=27/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/vehicals.jpg" alt="Vehicles"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/vehicals.jpg')}}" alt="Vehicles"></div>
                 <div class="content">
                     <p><strong>Vehicles</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=28/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=28/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=28/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=28/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=28/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=28/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/comics.png" alt="Entertainment: Comics"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/comics.png')}}" alt="Entertainment: Comics"></div>
                 <div class="content">
                     <p><strong>Entertainment: Comics</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=29/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=29/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=29/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=29/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=29/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=29/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/gadgets.png" alt="Science: Gadgets"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/gadgets.png')}}" alt="Science: Gadgets"></div>
                 <div class="content">
                     <p><strong>Science: Gadgets</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=30/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=30/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=30/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=30/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=30/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=30/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/anime.jpg" alt="Entertainment: Japanese Anime & Manga"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/anime.jpg')}}" alt="Entertainment: Japanese Anime & Manga"></div>
                 <div class="content">
                     <p><strong>Entertainment: Japanese Anime & Manga</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=31/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=31/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=31/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=31/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=31/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=31/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
             </div>
             <div class="cards">
                 <!-- image related to type of quiz -->
-                <div class="img"><img src="../static/img/cartoon.jpg" alt="Entertainment: Cartoon & Animations"></div>
+                <div class="img"><img src="{{url_for('static',filename='img/cartoon.jpg')}}" alt="Entertainment: Cartoon & Animations"></div>
                 <div class="content">
                     <p><strong>Entertainment: Cartoon & Animations</strong></p>
                     <p>About that particular topic</p>
                     <div class="button">
-                        <button class="btn"><a href="/category=32/difficulty=easy">Easy</a></button>
-                        <button class="btn"><a href="/category=32/difficulty=medium">Medium</a></button>
-                        <button class="btn"><a href="/category=32/difficulty=hard">Difficult</a></button>
+                        <button class="btn"><a href="/start/category=32/difficulty=easy">Easy</a></button>
+                        <button class="btn"><a href="/start/category=32/difficulty=medium">Medium</a></button>
+                        <button class="btn"><a href="/start/category=32/difficulty=hard">Difficult</a></button>
                     </div>
                 </div>
             </div>
@@ -371,7 +371,7 @@
         </div>
     </main>
 </body>
-<script src="../static/js/search.js"></script>
+<!-- <script src="../static/js/search.js"></script> -->
 <!-- These commented links are for backened -->
-<!-- <script src="{{url_for('static',filename='js/search.js')}}"></script> -->
+<script src="{{url_for('static',filename='js/search.js')}}"></script>
 </html>

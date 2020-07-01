@@ -9,12 +9,13 @@
 
   <!-- Link Swiper's CSS -->
 
-  <link rel="stylesheet" href="../static/css/quiz.css">
-  <link rel="stylesheet" href="../static/css/timer.css">
+
+  <link rel="stylesheet" href="{{url_for('static',filename='css/quiz.css')}}"> 
+  <link rel="stylesheet" href="{{url_for('static',filename='css/timer.css')}}"> 
   
 </head>
 
-<body>
+<body onload='start({{num}},{{level}})'>
   <!-- Swiper -->
   <nav id="navbar">
       <ul>
@@ -26,7 +27,8 @@
       </ul>
   </nav>
   <div class="swiper-container">
-    <div class="swiper-wrapper">
+    
+    <div class="swiper-wrapper" >
       <div class="swiper-slide"></div>
       <div class="swiper-slide"></div>
       <div class="swiper-slide"></div>
@@ -54,9 +56,8 @@
 
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <script src="../static/js/quiz.js"></script>
-  <script src="../static/js/timer.js"></script>
-
+  <script src="{{url_for('static',filename='js/quiz.js')}}"></script>
+  <script src="{{url_for('static',filename='js/timer.js')}}"></script>
   <!-- Initialize Swiper -->
 </body>
 
