@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us</title>
-    <link rel="stylesheet" href="../static/css/nav.css">
-    <link rel="stylesheet" href="../static/css/form.css">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/nav.css')}}"> 
+    <link rel="stylesheet" href="{{url_for('static',filename='css/form.css')}}">
 </head>
+
 <body>
+    <!-- This is navigation bar -->
     <nav id="navbar">
         <ul>
             <li>
                 <h3>Title</h3>
             </li> <!-- Name of webpage-->
-            <li><a href="../templates/index.html">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="../templates/contact.html">Contact Us</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact">Contact Us</a></li>
         </ul>
         <ul>
             <li><input type="text" id='search' placeholder="Search"></li>
