@@ -21,6 +21,8 @@ let myVar=setInterval(()=>{
    
 },1000)
 setTimeout(()=>{
+    window.location.href='/result'
     clearInterval(myVar)
-},2700000)
+    getMarkedAnswers()
+},1800000)
 

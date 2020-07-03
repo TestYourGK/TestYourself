@@ -1,5 +1,7 @@
 
-document.getElementById('end').addEventListener('click',()=>{
+document.getElementById('end').addEventListener('click',getMarkedAnswers)
+
+function getMarkedAnswers(){
     let options=document.getElementsByClassName('options')
     let answers=new Array()
     Array.from(options).forEach(elem=>{
@@ -11,8 +13,8 @@ document.getElementById('end').addEventListener('click',()=>{
             }
         })
         if(!k){
-            answers.push("")
+            answers.push("Unattempted")
         }
     })
     sessionStorage.setItem('ans',JSON.stringify(answers))
-})
+}
