@@ -15,7 +15,7 @@
   
 </head>
 <style>
-  #nym,#level{
+  #num,#level{
     display: none;
   }
 </style>
@@ -26,7 +26,7 @@
           <li><h3>Quiz Begins</h3></li>
       </ul>
       <ul>
-          <li><button>End Quiz</button></li>
+          <li><button id='end'><a href="/result">End Quiz</a></button></li>
           <li id="timer">timer</li>
       </ul>
   </nav>
@@ -54,6 +54,7 @@
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="{{url_for('static',filename='js/quiz.js')}}"></script>
   <script src="{{url_for('static',filename='js/timer.js')}}"></script>
+  <script src="{{url_for('static',filename='js/getMarked.js')}}"></script>
   <!-- Initialize Swiper -->
 </body>
 

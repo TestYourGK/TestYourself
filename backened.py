@@ -12,6 +12,11 @@ def contact():
     return render_template('contact.html')
     
 
+@app.route('/result')
+def result():
+    return render_template('result.html')
+    
+
 @app.route('/start/category=<string:num>/difficulty=<string:level>')
 def start(num,level):
     return render_template('test.html',num=num,level=level)
