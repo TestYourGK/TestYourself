@@ -15,6 +15,10 @@ def contact():
 @app.route('/result')
 def result():
     return render_template('result.html')
+
+@app.route('/error')
+def error():
+    return render_template('error.html')
     
 
 @app.route('/start/category=<string:num>/difficulty=<string:level>')
